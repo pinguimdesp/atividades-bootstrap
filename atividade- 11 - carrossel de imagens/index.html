@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+    /*CSS para forçar o tamanho e manter a proporção da imagem*/
+    .custom-img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        /* Faz a imagem preencher o quadrado sem esticar*/
+    }
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel com Bootstrap</title>
+</head>
+<body>
+
+    <div id="meuCarrossel" class="carrossel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#meuCarrossel" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#meuCarrossel" data-bs-slide-to="1"></button>
+            <button data-bs-target="#meuCarrossel" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="lionel-messi-sorri-durante-goleada-do-barcelona-sobre-o-psv-na-liga-dos-campeoes-1537393049603_v2_450x450.jpg" class="d-block mx-auto custom-img" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>M</h3>
+                    <p>Messi</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="luis-suarez-barcelona-arsenal_3432451.jpg" class="d-block mx-auto custom-img" alt="Segundo slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>S</h3>
+                    <p>Suárez</p>
+                </div>
+            </div>
+             <div class="carousel-item">
+                <img src="images (1).jpg" class="d-block mx-auto custom-img" alt="Segundo slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>N</h3>
+                    <p>Neymar</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#meuCarrossel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+         <button class="carousel-control-next" data-bs-target="#meuCarrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+         <button class="carousel-control-next" data-bs-target="#meuCarrossel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+</body>
+</html>
